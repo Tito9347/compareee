@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comparatifs d'objets, guides d'achat et conseils pour trouver les meilleurs produits multi‑thématiques." />
+  <title>LesMeilleursComparatifs — Comparatifs & Guides</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="container topbar">
+      <div></div>
+      <div class="brand" aria-label="Nom du site">LesMeilleursComparatifs</div>
+      <div class="actions">
+        <button class="mode-toggle" id="modeToggle" aria-label="Activer / désactiver le mode sombre">🌗</button>
+      </div>
+    </div>
+    <div class="container nav">
+      <div class="menu">
+        <button id="menuBtn" aria-haspopup="true" aria-expanded="false">Catégories ▾</button>
+        <div class="dropdown" id="dropdown" role="menu" aria-label="Menu catégories">
+          <a href="#" data-cat="tech">Tech & High‑Tech</a>
+          <a href="#" data-cat="sport">Sport & Fitness</a>
+          <a href="#" data-cat="maison">Maison & Déco</a>
+          <a href="#" data-cat="cuisine">Cuisine</a>
+          <a href="#" data-cat="cadeaux">Idées cadeaux</a>
+        </div>
+      </div>
+      <nav class="pillbar" aria-label="Meilleurs comparatifs">
+        <a class="pill" href="#">Meilleurs iPhone</a>
+        <a class="pill" href="#">Chaussures running</a>
+        <a class="pill" href="#">Cadeaux fête des pères</a>
+        <a class="pill" href="#">Casques Bluetooth</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 style="margin:.25rem 0">Trouvez le meilleur — simplement</h1>
+      <p style="margin:0; opacity:.8">Guides d’achat indépendants et comparatifs multi‑thématiques, mis à jour régulièrement.</p>
+      <div class="searchbar">
+        <label class="sr-only" for="q">Recherche</label>
+        <input id="q" type="search" placeholder="Rechercher un comparatif (ex: aspirateur, iPhone, cadeaux)…" />
+      </div>
+    </section>
+
+    <section aria-labelledby="gridTitle">
+      <h2 id="gridTitle" style="margin-bottom:.5rem">Derniers comparatifs</h2>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container" style="display:flex; gap:1rem; justify-content:space-between; flex-wrap:wrap">
+      <small>© 2025 LesMeilleursComparatifs</small>
+      <small>Certains liens pourront être affiliés. <a href="./pages/mentions-legales.html">Mentions légales</a> · <a href="./pages/confidentialite.html">Confidentialité</a></small>
+    </div>
+  </footer>
+
+  <script src="./assets/script.js"></script>
+</body>
+</html>
