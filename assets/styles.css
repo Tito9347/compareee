@@ -26,3 +26,8 @@ header.site{ position:sticky; top:0; z-index:40; backdrop-filter:saturate(140%) 
 .badge{display:inline-block; background:color-mix(in oklab, var(--green) 16%, var(--beige)); color:var(--green); border:1px solid var(--green); padding:.15rem .5rem; border-radius:999px; font-size:.75rem; font-weight:800}
 footer.site{margin-top:2rem; padding:2rem 0; border-top:1px solid color-mix(in oklab, var(--beige-ink) 10%, transparent)}
 .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
+.hero h1,
+.hero p {
+  text-align: center;
+}
+
