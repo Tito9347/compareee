@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Montres connectées — Comparatif</title>
+  <meta name="description" content="Montres et bracelets fitness au meilleur rapport qualité/prix.">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="container topbar">
+    <div></div>
+    <div class="brand">LesMeilleursComparatifs</div>
+    <div class="actions"><button class="mode-toggle" id="modeToggle">🌗</button></div>
+  </div>
+</header>
+<main class="container">
+  <section class="hero">
+    <h1>Montres connectées</h1>
+    <p>Montres et bracelets fitness au meilleur rapport qualité/prix.</p>
+  </section>
+  <div class="grid">
+    <article class="card">
+      <div class="thumb">Produit</div>
+      <div class="body">
+        <span class="badge">Top</span>
+        <h3>Produit 1</h3>
+        <p>Description courte.</p>
+        <a class="badge" href="#">Voir sur Amazon</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="thumb">Produit</div>
+      <div class="body">
+        <span class="badge">Valeur</span>
+        <h3>Produit 2</h3>
+        <p>Description courte.</p>
+        <a class="badge" href="#">Voir sur Amazon</a>
+      </div>
+    </article>
+  </div>
+</main>
+<script>
+  const btn = document.getElementById('modeToggle');
+  btn.addEventListener('click', ()=>{
+    const cur = document.documentElement.getAttribute('data-theme') || 'light';
+    const next = cur === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('lmc-theme', next);
+  });
+  (function initTheme(){
+    const saved = localStorage.getItem('lmc-theme');
+    if(saved) document.documentElement.setAttribute('data-theme', saved);
+  })();
+</script>
+</body>
+</html>
