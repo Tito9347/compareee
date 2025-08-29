@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>À propos — LesMeilleursComparatifs</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="container topbar">
+    <div></div>
+    <div class="brand"><a href="../index.html">LesMeilleursComparatifs</a></div>
+    <div class="actions"><button class="mode-toggle" id="modeToggle">🌗</button></div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>À propos</h1>
+    <p>Notre mission : vous aider à choisir simplement le meilleur produit — sans jargon inutile.</p>
+  </section>
+
+  <article class="card" style="padding:1rem;display:grid;gap:1rem">
+    <section>
+      <h2>Notre méthode</h2>
+      <ul>
+        <li>Veille sur les modèles populaires & tests reconnus</li>
+        <li>Analyse des critères clés (qualité, autonomie, confort, SAV…)</li>
+        <li>Comparaison transparente : points forts / points faibles</li>
+        <li>Mises à jour régulières</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Transparence</h2>
+      <p>Certains liens peuvent être affiliés. Cela ne change pas le prix pour vous ni nos critères de sélection.</p>
+    </section>
+  </article>
+</main>
+
+<script>
+  const b=document.getElementById('modeToggle');
+  b.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme')||'light';document.documentElement.setAttribute('data-theme',c==='light'?'dark':'light')});
+  (function(){const s=localStorage.getItem('lmc-theme'); if(s) document.documentElement.setAttribute('data-theme', s);})();
+</script>
+</body>
+</html>
