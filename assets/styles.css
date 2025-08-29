@@ -45,3 +45,15 @@ footer.site{margin-top:2rem; padding:2rem 0; border-top:1px solid color-mix(in o
 .brand a:focus {
   text-decoration: none;   /* empêche aussi le soulignement au survol ou au clic */
 }
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .body {
+  flex: 1;                /* prend toute la hauteur dispo */
+  display: flex;
+  flex-direction: column; /* empile titre, texte, bouton */
+  justify-content: space-between; /* pousse le bouton en bas */
+}
+
