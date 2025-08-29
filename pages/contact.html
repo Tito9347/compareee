@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — LesMeilleursComparatifs</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="container topbar">
+    <div></div>
+    <div class="brand"><a href="../index.html">LesMeilleursComparatifs</a></div>
+    <div class="actions"><button class="mode-toggle" id="modeToggle">🌗</button></div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Contact</h1>
+    <p>Pour toute question, partenariat ou suggestion de comparatif.</p>
+  </section>
+
+  <article class="card" style="padding:1rem">
+    <form action="mailto:contact@exemple.com" method="post" enctype="text/plain" style="display:grid; gap:.75rem; max-width:640px">
+      <label>Votre e-mail<br><input type="email" name="email" required style="width:100%; padding:.7rem; border-radius:10px; border:1px solid color-mix(in oklab, var(--ink) 18%, transparent); background:var(--card)"></label>
+      <label>Objet<br><input type="text" name="subject" required style="width:100%; padding:.7rem; border-radius:10px; border:1px solid color-mix(in oklab, var(--ink) 18%, transparent); background:var(--card)"></label>
+      <label>Message<br><textarea name="message" rows="6" required style="width:100%; padding:.7rem; border-radius:10px; border:1px solid color-mix(in oklab, var(--ink) 18%, transparent); background:var(--card)"></textarea></label>
+      <button type="submit" class="pill" style="border:none; cursor:pointer; width:max-content">Envoyer</button>
+    </form>
+    <p style="opacity:.8; margin-top:.75rem"><small>Ou écrivez-nous à : <a href="mailto:contact@exemple.com">contact@exemple.com</a></small></p>
+  </article>
+</main>
+
+<script>
+  const b=document.getElementById('modeToggle');
+  b.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme')||'light';document.documentElement.setAttribute('data-theme',c==='light'?'dark':'light')});
+  (function(){const s=localStorage.getItem('lmc-theme'); if(s) document.documentElement.setAttribute('data-theme', s);})();
+</script>
+</body>
+</html>
