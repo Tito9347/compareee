@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mentions légales — LesMeilleursComparatifs</title>
   <link rel="stylesheet" href="../assets/styles.css">
 </head>
@@ -15,40 +16,32 @@
 </header>
 
 <main class="container">
-  <section class="hero">
-    <h1>Mentions légales</h1>
-  </section>
+  <section class="hero"><h1>Mentions légales</h1></section>
 
   <article class="card" style="padding:1rem;display:grid;gap:1rem">
     <section>
       <h2>Éditeur du site</h2>
-      <p>Nom / Raison sociale<br>Adresse postale<br>
-      Email : <a href="mailto:contact@exemple.com">contact@exemple.com</a><br>
-      SIREN (le cas échéant)</p>
-      <p>Directeur de la publication : Votre Nom</p>
+      <p>Ce site est édité par un particulier.  
+      Conformément à l’article 6 III-2 de la loi n°2004-575, l’hébergeur détient mes coordonnées complètes et peut les communiquer aux autorités compétentes en cas de réquisition légale.  
+      Contact : <a href="mailto:contact@exemple.com">contact@exemple.com</a></p>
     </section>
 
     <section>
       <h2>Hébergement</h2>
-      <p>Netlify, San Francisco, CA, USA.</p>
+      <p>Site hébergé par Netlify, San Francisco, CA, USA — <a href="https://www.netlify.com">www.netlify.com</a></p>
     </section>
 
     <section>
       <h2>Affiliation</h2>
-      <p>Ce site peut contenir des liens affiliés (Amazon, etc.). Cela ne change pas le prix pour vous. Les sélections restent indépendantes.</p>
+      <p>Ce site participe au Programme Partenaires d’Amazon EU, un programme d’affiliation conçu pour permettre à des sites de percevoir une rémunération grâce à la création de liens vers Amazon.fr.  
+      En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</p>
     </section>
 
     <section>
       <h2>Propriété intellectuelle</h2>
-      <p>Le contenu (textes, éléments visuels) est protégé. Toute reproduction non autorisée est interdite.</p>
+      <p>L’ensemble du contenu de ce site (textes, images, graphismes, logos) est protégé par le droit d’auteur. Toute reproduction est interdite sans autorisation.</p>
     </section>
   </article>
 </main>
-
-<script>
-  const b=document.getElementById('modeToggle');
-  b.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme')||'light';document.documentElement.setAttribute('data-theme',c==='light'?'dark':'light')});
-  (function(){const s=localStorage.getItem('lmc-theme'); if(s) document.documentElement.setAttribute('data-theme', s);})();
-</script>
 </body>
 </html>
