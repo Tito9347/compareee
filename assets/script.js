@@ -1,11 +1,52 @@
-
 const DATA = [
-  { title:"Meilleurs iPhone 2025", cat:"tech", excerpt:"Photos, autonomie, rapport qualité/prix.", badge:"Top Tech", slug:"/categories/smartphones.html" },
-  { title:"Chaussures de running 10km", cat:"sport", excerpt:"Stabilité, amorti, dynamisme.", badge:"Sport", slug:"/categories/chaussures-running.html" },
-  { title:"Idées cadeaux — Fête des pères", cat:"cadeaux", excerpt:"Sélection à tous les budgets.", badge:"Cadeaux", slug:"/categories/idees-cadeaux.html" },
-  { title:"Aspirateurs balais 2025", cat:"maison", excerpt:"Puissance, autonomie, filtration.", badge:"Maison", slug:"/categories/aspirateurs.html" },
-  { title:"Robots cuiseurs", cat:"cuisine", excerpt:"Capacités, programmes, facilité d’usage.", badge:"Cuisine", slug:"/categories/robots-cuisine.html" },
-  { title:"Casques Bluetooth", cat:"tech", excerpt:"Confort, ANC et audio.", badge:"Audio", slug:"/categories/casques-audio.html" },
+  { 
+    title:"Meilleurs iPhone 2025", 
+    cat:"tech", 
+    excerpt:"Photos, autonomie, rapport qualité/prix.", 
+    badge:"Top Tech", 
+    slug:"/categories/smartphones.html",
+    img:"/assets/img/smartphones.jpg"
+  },
+  { 
+    title:"Chaussures de running 10km", 
+    cat:"sport", 
+    excerpt:"Stabilité, amorti, dynamisme.", 
+    badge:"Sport", 
+    slug:"/categories/chaussures-running.html",
+    img:"/assets/img/chaussures-running.jpg"
+  },
+  { 
+    title:"Idées cadeaux — Fête des pères", 
+    cat:"cadeaux", 
+    excerpt:"Sélection à tous les budgets.", 
+    badge:"Cadeaux", 
+    slug:"/categories/idees-cadeaux.html",
+    img:"/assets/img/idees-cadeaux.jpg"
+  },
+  { 
+    title:"Aspirateurs balais 2025", 
+    cat:"maison", 
+    excerpt:"Puissance, autonomie, filtration.", 
+    badge:"Maison", 
+    slug:"/categories/aspirateurs.html",
+    img:"/assets/img/aspirateurs.jpg"
+  },
+  { 
+    title:"Robots cuiseurs", 
+    cat:"cuisine", 
+    excerpt:"Capacités, programmes, facilité d’usage.", 
+    badge:"Cuisine", 
+    slug:"/categories/robots-cuisine.html",
+    img:"/assets/img/robots-cuisine.jpg"
+  },
+  { 
+    title:"Casques Bluetooth", 
+    cat:"tech", 
+    excerpt:"Confort, ANC et audio.", 
+    badge:"Audio", 
+    slug:"/categories/casques-audio.html",
+    img:"/assets/img/casques-audio.jpg"
+  },
 ];
 const grid = document.getElementById('grid');
 const q = document.getElementById('q');
