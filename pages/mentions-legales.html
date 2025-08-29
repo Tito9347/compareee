@@ -1,1 +1,54 @@
-<h1>Mentions légales</h1><p>Site LesMeilleursComparatifs.</p>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mentions légales — LesMeilleursComparatifs</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="container topbar">
+    <div></div>
+    <div class="brand"><a href="../index.html">LesMeilleursComparatifs</a></div>
+    <div class="actions"><button class="mode-toggle" id="modeToggle">🌗</button></div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Mentions légales</h1>
+  </section>
+
+  <article class="card" style="padding:1rem;display:grid;gap:1rem">
+    <section>
+      <h2>Éditeur du site</h2>
+      <p>Nom / Raison sociale<br>Adresse postale<br>
+      Email : <a href="mailto:contact@exemple.com">contact@exemple.com</a><br>
+      SIREN (le cas échéant)</p>
+      <p>Directeur de la publication : Votre Nom</p>
+    </section>
+
+    <section>
+      <h2>Hébergement</h2>
+      <p>Netlify, San Francisco, CA, USA.</p>
+    </section>
+
+    <section>
+      <h2>Affiliation</h2>
+      <p>Ce site peut contenir des liens affiliés (Amazon, etc.). Cela ne change pas le prix pour vous. Les sélections restent indépendantes.</p>
+    </section>
+
+    <section>
+      <h2>Propriété intellectuelle</h2>
+      <p>Le contenu (textes, éléments visuels) est protégé. Toute reproduction non autorisée est interdite.</p>
+    </section>
+  </article>
+</main>
+
+<script>
+  const b=document.getElementById('modeToggle');
+  b.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme')||'light';document.documentElement.setAttribute('data-theme',c==='light'?'dark':'light')});
+  (function(){const s=localStorage.getItem('lmc-theme'); if(s) document.documentElement.setAttribute('data-theme', s);})();
+</script>
+</body>
+</html>
