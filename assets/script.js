@@ -57,7 +57,9 @@ function card(item){
   const el = document.createElement('article');
   el.className = 'card';
   el.innerHTML = `
-    <div class="thumb">${item.badge}</div>
+    <div class="thumb">
+  ${ item.img ? `<img src="${item.img}" alt="${item.title}">` : item.badge }
+</div>
     <div class="body">
       <span class="badge">${item.badge}</span>
       <h3 style="margin:.2rem 0 .1rem">${item.title}</h3>
