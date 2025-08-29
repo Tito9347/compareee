@@ -36,3 +36,12 @@ footer.site{margin-top:2rem; padding:2rem 0; border-top:1px solid color-mix(in o
   object-fit: cover;
   display: block;
 }
+.brand a {
+  color: inherit;          /* garde la même couleur que le texte */
+  text-decoration: none;   /* enlève le soulignement */
+}
+
+.brand a:hover,
+.brand a:focus {
+  text-decoration: none;   /* empêche aussi le soulignement au survol ou au clic */
+}
