@@ -1,1 +1,46 @@
-<h1>Confidentialité</h1><p>Pas de cookies autres que techniques.</p>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confidentialité — LesMeilleursComparatifs</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="container topbar">
+    <div></div>
+    <div class="brand"><a href="../index.html">LesMeilleursComparatifs</a></div>
+    <div class="actions"><button class="mode-toggle" id="modeToggle">🌗</button></div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Politique de confidentialité</h1>
+  </section>
+
+  <article class="card" style="padding:1rem;display:grid;gap:1rem">
+    <section>
+      <h2>Données collectées</h2>
+      <p>Nous ne collectons que les données strictement nécessaires au fonctionnement du site et à une mesure d’audience essentielle.</p>
+    </section>
+
+    <section>
+      <h2>Cookies & Affiliation</h2>
+      <p>Les plateformes d’affiliation (ex. Amazon) peuvent déposer leurs propres cookies lorsque vous cliquez sur certains liens.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Pour toute question RGPD ou demande d’accès/suppression : <a href="mailto:contact@exemple.com">contact@exemple.com</a>.</p>
+    </section>
+  </article>
+</main>
+
+<script>
+  const b=document.getElementById('modeToggle');
+  b.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme')||'light';document.documentElement.setAttribute('data-theme',c==='light'?'dark':'light')});
+  (function(){const s=localStorage.getItem('lmc-theme'); if(s) document.documentElement.setAttribute('data-theme', s);})();
+</script>
+</body>
+</html>
