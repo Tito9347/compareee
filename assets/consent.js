@@ -1,7 +1,7 @@
 <!-- assets/consent.js -->
 <script>
 // === CONFIG ===
-const GA_ID = 'G-XXXXXXXXXX'; // <-- Mets ton ID GA4 ici (ex: G-AB12C3D4E5)
+const GA_ID = 'G-ZV8VW7Y5FZ'; //
 const STORAGE_KEY = 'lmc-consent'; // 'accepted' | 'refused'
 
 // Détecter le bon préfixe pour les liens (root vs sous-dossiers)
