@@ -1,5 +1,5 @@
 // === CONFIG ===
-const GA_ID = 'G-XXXXXXXXXX'; // <-- ton ID GA4
+const GA_ID = 'G-ZV8VW7Y5FZ'; // 
 const STORAGE_KEY = 'lmc-consent'; // 'accepted' | 'refused'
 
 // Détecter si on est dans un sous-dossier (pages/ ou categories/)
