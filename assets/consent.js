@@ -21,6 +21,22 @@ function loadGA(id){
   gtag('js', new Date());
   gtag('config', id);
 }
+// Track Amazon link clicks
+function trackAmazonClicks(){
+  document.querySelectorAll('a.amazon-link').forEach(link=>{
+    link.addEventListener('click', ()=>{
+      if (window.gtag) {
+        gtag('event', 'click', {
+          event_category: 'Affiliation',
+          event_label: 'Amazon',
+          transport_type: 'beacon'
+        });
+        console.log('[consent] Click Amazon event envoyé à GA4');
+      }
+    });
+  });
+}
+
 
 // Injecte le CSS du bandeau
 function injectBannerStyles(){
