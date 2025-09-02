@@ -20,6 +20,7 @@ function loadGA(id){
   window.gtag = function(){ dataLayer.push(arguments); };
   gtag('js', new Date());
   gtag('config', id);
+  trackAmazonClicks();
 }
 // Track Amazon link clicks
 function trackAmazonClicks(){
