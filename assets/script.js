@@ -101,3 +101,11 @@ modeToggle.addEventListener('click', ()=>{
 });
 (function initTheme(){ const saved = localStorage.getItem('lmc-theme'); if(saved) document.documentElement.setAttribute('data-theme', saved); })();
 render(DATA);
+// Forcer tous les liens Amazon à s'ouvrir dans un nouvel onglet
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('a[href*="amazon.fr"]').forEach(link => {
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener");
+  });
+});
+
