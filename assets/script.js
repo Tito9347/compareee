@@ -103,9 +103,13 @@ modeToggle.addEventListener('click', ()=>{
 render(DATA);
 // Forcer tous les liens Amazon à s'ouvrir dans un nouvel onglet
 document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll('a[href*="amazon.fr"]').forEach(link => {
+  document.querySelectorAll('a[href*="amazon."]').forEach(link => {
     link.setAttribute("target", "_blank");
     link.setAttribute("rel", "noopener");
   });
+});
+document.querySelectorAll('a[href*="amzn.to"]').forEach(link => {
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noopener");
 });
 
