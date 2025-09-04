@@ -56,4 +56,23 @@ footer.site{margin-top:2rem; padding:2rem 0; border-top:1px solid color-mix(in o
   flex-direction: column; /* empile titre, texte, bouton */
   justify-content: space-between; /* pousse le bouton en bas */
 }
+/* Boutons CTA */
+.btn-cta {
+  display:inline-block;
+  padding:.65rem 1rem;
+  border-radius:999px;
+  font-weight:700;
+  text-align:center;
+  border:1px solid var(--green, #0F5C4A);
+  background: var(--green, #0F5C4A);
+  color: var(--ink-on-green, #EAF5F1);
+  transition: transform .05s ease, box-shadow .2s ease, background .2s ease;
+}
+.btn-cta:hover { box-shadow:0 6px 20px rgba(15,92,74,.25); transform: translateY(-1px); }
+.btn-cta--light {
+  background: color-mix(in oklab, var(--beige,#F5F1E8) 92%, transparent);
+  color: var(--green,#0F5C4A);
+}
+.btn-cta--full { width:100%; }
+
 
