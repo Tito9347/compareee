@@ -66,58 +66,27 @@
   </header>
 
   <main class="container">
-
-  <section class="hero">
-    <h1>Bienvenue sur Les Meilleurs Comparatifs</h1>
-    <p>Découvrez nos comparatifs détaillés sur la tech, le sport, la maison et les cadeaux. Des guides utiles pour choisir facilement le meilleur produit en 2025.</p>
-  </section>
-
-  <!-- Catégories -->
-  <div class="grid" style="margin-top:1.5rem">
-
-    <!-- Smartphones -->
-    <article class="card">
-      <img src="assets/img/smartphones.jpg" alt="Comparatifs Smartphones" style="width:100%; height:auto; border-radius:.5rem">
-      <div class="card-body">
-        <h3>Smartphones</h3>
-        <p>Tests, comparatifs et guides pour choisir le bon téléphone en 2025.</p>
-        <a class="pill" href="/categories/smartphones/">Voir</a>
+    <section class="hero">
+      <h1 style="margin:.25rem 0;text-align:center">Trouvez le meilleur — simplement</h1>
+      <p style="margin:0; opacity:.8;text-align:center">Guides d’achat indépendants et comparatifs multi‑thématiques, mis à jour régulièrement.</p>
+      <div class="searchbar">
+        <label class="sr-only" for="q">Recherche</label>
+        <input id="q" type="search" placeholder="Rechercher un comparatif (ex: aspirateur, iPhone, cadeaux)…" />
       </div>
-    </article>
+      <div id="filters" class="filters" aria-label="Accès rapides catégories">
+  <a class="pill" href="/categories/smartphones.html">Tech</a>
+  <a class="pill" href="/categories/chaussures-running.html">Sport</a>
+  <a class="pill" href="/categories/luminaires-deco.html">Maison</a>
+  <a class="pill" href="/categories/robots-cuisine.html">Cuisine</a>
+  <a class="pill" href="/categories/idees-cadeaux.html">Cadeaux</a>
+</div>
+    </section>
 
-    <!-- Maison -->
-    <article class="card">
-      <img src="assets/img/maison.jpg" alt="Comparatifs Maison" style="width:100%; height:auto; border-radius:.5rem">
-      <div class="card-body">
-        <h3>Maison</h3>
-        <p>Robots aspirateurs, purificateurs d’air, cafetières… nos comparatifs pratiques.</p>
-        <a class="pill" href="/categories/maison/">Voir</a>
-      </div>
-    </article>
-
-    <!-- Sport -->
-    <article class="card">
-      <img src="assets/img/sport.jpg" alt="Comparatifs Sport" style="width:100%; height:auto; border-radius:.5rem">
-      <div class="card-body">
-        <h3>Sport</h3>
-        <p>Objets connectés, montres, équipements fitness pour progresser.</p>
-        <a class="pill" href="/categories/sport/">Voir</a>
-      </div>
-    </article>
-
-    <!-- Cadeaux -->
-    <article class="card">
-      <img src="assets/img/cadeaux-grandparents.jpg" alt="Comparatifs Cadeaux" style="width:100%; height:auto; border-radius:.5rem">
-      <div class="card-body">
-        <h3>Cadeaux</h3>
-        <p>Idées utiles et originales pour toutes les occasions : grands-parents, Noël, anniversaires…</p>
-        <a class="pill" href="/categories/cadeaux/">Voir</a>
-      </div>
-    </article>
-
-  </div>
-</main>
-
+    <section aria-labelledby="gridTitle">
+      <h2 id="gridTitle" style="margin-bottom:.5rem">Derniers comparatifs</h2>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
 
   <footer class="site">
     <div class="container" style="display:flex; gap:1rem; justify-content:space-between; flex-wrap:wrap">
