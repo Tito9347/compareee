@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadeaux — Les Meilleurs Comparatifs</title>
+  <meta name="description" content="Découvrez nos comparatifs cadeaux : idées originales et utiles pour toutes les occasions. Fête des grands-parents, Noël, anniversaires et plus.">
+  <link rel="canonical" href="https://les-meilleurs-comparatif.netlify.app/categories/cadeaux/index.html">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
+
+  <link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="container topbar">
+    <div></div>
+    <div class="brand">
+      <a href="../../index.html" aria-label="Accueil">
+        <img src="../../assets/logos/logo-current-light.svg" alt="LesMeilleursComparatifs" height="24">
+      </a>
+    </div>
+    <div class="actions">
+      <button class="mode-toggle" id="modeToggle" aria-label="Activer / désactiver le mode sombre">🌗</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <nav style="margin:.75rem 0; font-size:.95rem">
+    <a href="../../index.html">Accueil</a> › <span>Cadeaux</span>
+  </nav>
+
+  <section class="hero">
+    <h1>🎁 Comparatifs Cadeaux</h1>
+    <p>Que ce soit pour la fête des grands-parents, Noël, un anniversaire ou toute autre occasion, retrouvez ici nos <strong>idées cadeaux testées et comparées</strong>. Des suggestions utiles, originales et adaptées à tous les budgets.</p>
+  </section>
+
+  <!-- Liste des articles cadeaux -->
+  <div class="grid" style="margin-top:1.5rem">
+    
+    <!-- Article 1 : Fête des grands-parents -->
+    <article class="card">
+      <img src="../../assets/img/cadeaux-grandparents.jpg" alt="Cadeaux fête des grands-parents 2025" style="width:100%; height:auto; border-radius:.5rem">
+      <div class="card-body">
+        <h2>Top 10 cadeaux fête des grands-parents 2025</h2>
+        <p>Cadres photo connectés, plaids chauffants, tablettes simplifiées, liseuses… notre sélection 2025 des cadeaux les plus utiles et touchants pour papy et mamie.</p>
+        <a class="pill" href="./meilleurs-cadeaux-grands-parents-2025.html">Voir l’article</a>
+      </div>
+    </article>
+
+    <!-- Article 2 : à venir -->
+    <article class="card">
+      <img src="../../assets/img/placeholder.jpg" alt="Comparatif cadeaux à venir" style="width:100%; height:auto; border-radius:.5rem">
+      <div class="card-body">
+        <h2>Prochain comparatif cadeaux</h2>
+        <p>Bientôt disponible : nos prochains guides cadeaux pour Noël, anniversaires et autres occasions.</p>
+        <a class="pill" href="#">À venir</a>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<!-- Bouton retour haut de page -->
+<button id="backToTop" aria-label="Retour en haut">↑</button>
+
+<script>
+  // Mode sombre (persistant)
+  const btn = document.getElementById('modeToggle');
+  if (btn) {
+    btn.addEventListener('click', ()=> {
+      const cur = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = cur === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('lmc-theme', next);
+    });
+  }
+  (function(){
+    const s = localStorage.getItem('lmc-theme');
+    if(s) document.documentElement.setAttribute('data-theme', s);
+  })();
+</script>
+<script src="../../assets/consent.js"></script>
+<script src="../../assets/script.js"></script>
+</body>
+</html>
