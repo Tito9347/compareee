@@ -112,4 +112,17 @@ document.querySelectorAll('a[href*="amzn.to"]').forEach(link => {
   link.setAttribute("target", "_blank");
   link.setAttribute("rel", "noopener");
 });
+// Bouton "Retour en haut"
+(function backToTop(){
+  const btn = document.getElementById('backToTop');
+  if (!btn) return;
+  const toggle = () => {
+    const y = window.scrollY || document.documentElement.scrollTop;
+    btn.classList.toggle('show', y > 800);
+  };
+  window.addEventListener('scroll', toggle, {passive:true});
+  toggle();
+  btn.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+})();
+
 
