@@ -19,7 +19,19 @@ header.site{ position:sticky; top:0; z-index:40; backdrop-filter:saturate(140%) 
 .pillbar{display:flex; gap:.5rem; flex-wrap:wrap} .pill{background:var(--green); color:var(--green-ink); border-radius:999px; padding:.4rem .75rem; font-weight:700; font-size:.9rem}
 .searchbar{margin:1rem 0} .searchbar input{width:100%; padding:.9rem 1rem; border-radius:14px; border:1px solid color-mix(in oklab, var(--beige-ink) 18%, transparent); background:var(--card); color:inherit; outline:none}
 .searchbar input:focus{box-shadow:0 0 0 4px var(--ring)}
-.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem}
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Dès que l’écran est large (>= 900px), forcer 3 colonnes */
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .card{background:var(--card); border:1px solid color-mix(in oklab, var(--beige-ink) 12%, transparent); border-radius:16px; overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column}
 .thumb{aspect-ratio:4/3; background:color-mix(in oklab, var(--green) 12%, var(--beige)); display:grid; place-items:center; color:var(--muted); font-weight:700}
 .body{padding:1rem; display:grid; gap:.4rem}
