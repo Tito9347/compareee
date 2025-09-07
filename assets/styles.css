@@ -93,19 +93,18 @@ footer.site{margin-top:2rem; padding:2rem 0; border-top:1px solid color-mix(in o
   box-shadow: 0 8px 24px rgba(0,0,0,.12); cursor:pointer; display:none;
 }
 #backToTop.show { display:block; }
-/* Grille responsive stable */
-.grid{
-  display:grid;
-  gap:1rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  align-items: stretch;
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
-/* Cartes verticales homogènes */
-.card{ display:flex; flex-direction:column; }
-.card .card-body{ display:flex; flex-direction:column; gap:.5rem; }
-.card .pill{ margin-top:auto; align-self:flex-start; }
-
+.card > img {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 
 
