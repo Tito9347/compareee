@@ -124,5 +124,54 @@ document.querySelectorAll('a[href*="amzn.to"]').forEach(link => {
   toggle();
   btn.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
 })();
+// --- Recherche instantanée sur les cartes de la page ---
+(function () {
+  const input = document.getElementById('q');
+  if (!input) return;
+
+  // Récupère toutes les cartes affichées sur la page (dans les grilles)
+  const grids = Array.from(document.querySelectorAll('.grid'));
+  const cards = grids.flatMap(g => Array.from(g.querySelectorAll('.card')));
+
+  // Filtre les cartes selon le terme
+  function applyFilter(term) {
+    const t = term.trim().toLowerCase();
+
+    // Si vide -> on réaffiche tout
+    if (!t) {
+      cards.forEach(card => (card.style.display = ''));
+      return;
+    }
+
+    cards.forEach(card => {
+      const h = card.querySelector('h3, h2');
+      const p = card.querySelector('p');
+      const hay = ((h ? h.textContent : '') + ' ' + (p ? p.textContent : '')).toLowerCase();
+      card.style.display = hay.includes(t) ? '' : 'none';
+    });
+  }
+
+  // Applique le filtre au fil de la saisie
+  input.addEventListener('input', () => applyFilter(input.value));
+
+  // Entrée -> filtre et focus sur le premier CTA visible
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      applyFilter(input.value);
+      const firstVisible = cards.find(c => c.style.display !== 'none');
+      const firstLink = firstVisible?.querySelector('a.pill, a');
+      if (firstLink) firstLink.focus();
+    }
+  });
+
+  // Si un paramètre ?q= est présent dans l'URL, on l’applique au chargement
+  const params = new URLSearchParams(location.search);
+  const qParam = params.get('q');
+  if (qParam) {
+    input.value = qParam;
+    applyFilter(qParam);
+  }
+})();
+
 
 
