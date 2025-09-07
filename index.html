@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr" data-theme="light">
 <head>
+  <!-- Favicons -->
   <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
-<link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
-  <title>LesMeilleursComparatifs — Guides & comparatifs clairs</title>
-<meta name="description" content="Guides d’achat simples et comparatifs honnêtes : smartphones, sport, maison, cadeaux... Trouvez le meilleur rapidement.">
-<link rel="canonical" href="https://les-meilleurs-comparatif.netlify.app/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="LesMeilleursComparatifs — Guides & comparatifs clairs">
-<meta property="og:description" content="Guides d’achat simples et comparatifs honnêtes : smartphones, sport, maison, cadeaux...">
-<meta property="og:url" content="https://les-meilleurs-comparatif.netlify.app/">
-<meta property="og:image" content="https://les-meilleurs-comparatif.netlify.app/assets/og-cover.jpg">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="LesMeilleursComparatifs — Guides & comparatifs clairs">
-<meta name="twitter:description" content="Guides d’achat simples et comparatifs honnêtes.">
-<meta name="twitter:image" content="https://les-meilleurs-comparatif.netlify.app/assets/og-cover.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
 
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Comparatifs d'objets, guides d'achat et conseils pour trouver les meilleurs produits multi‑thématiques." />
-  <title>LesMeilleursComparatifs — Comparatifs & Guides</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LesMeilleursComparatifs — Guides & comparatifs clairs</title>
+  <meta name="description" content="Guides d’achat simples et comparatifs honnêtes : smartphones, sport, maison, cadeaux... Trouvez le meilleur rapidement.">
+  <link rel="canonical" href="https://les-meilleurs-comparatif.netlify.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LesMeilleursComparatifs — Guides & comparatifs clairs">
+  <meta property="og:description" content="Guides d’achat simples et comparatifs honnêtes : smartphones, sport, maison, cadeaux...">
+  <meta property="og:url" content="https://les-meilleurs-comparatif.netlify.app/">
+  <meta property="og:image" content="https://les-meilleurs-comparatif.netlify.app/assets/og-cover.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LesMeilleursComparatifs — Guides & comparatifs clairs">
+  <meta name="twitter:description" content="Guides d’achat simples et comparatifs honnêtes.">
+  <meta name="twitter:image" content="https://les-meilleurs-comparatif.netlify.app/assets/og-cover.jpg">
+
   <link rel="stylesheet" href="./assets/styles.css" />
-  <link rel="icon" href="./assets/logos/logo-v1-light.svg" type="image/svg+xml">
 </head>
 <body>
   <header class="site">
@@ -45,148 +44,144 @@
         <button class="mode-toggle" id="modeToggle" aria-label="Activer / désactiver le mode sombre">🌗</button>
       </div>
     </div>
+
     <div class="container nav">
       <div class="menu">
         <button id="menuBtn" aria-haspopup="true" aria-expanded="false">Catégories ▾</button>
         <div class="dropdown" id="dropdown" role="menu" aria-label="Menu catégories">
-  <a href="/categories/smartphones/">Tech & High-Tech</a>
-  <a href="/categories/sport/">Sport & Fitness</a>
-  <a href="/categories/maison/">Maison & Déco</a>
-  <a href="/categories/cuisine/">Cuisine</a>
-  <a href="/categories/cadeaux/">Cadeaux</a>
-</div>
+          <a href="/categories/smartphones/">Tech & High-Tech</a>
+          <a href="/categories/sport/">Sport & Fitness</a>
+          <a href="/categories/maison/">Maison & Déco</a>
+          <a href="/categories/cuisine/">Cuisine</a>
+          <a href="/categories/cadeaux/">Cadeaux</a>
+        </div>
       </div>
       <nav class="pillbar" aria-label="Meilleurs comparatifs">
-  <a class="pill" href="/categories/smartphones/">Meilleurs iPhone</a>
-  <a class="pill" href="/categories/sport/">Chaussures running</a>
-  <a class="pill" href="/categories/cadeaux/">Idées cadeaux</a>
-  <a class="pill" href="/categories/maison/">Casques / Audio & Maison</a>
-</nav>
+        <a class="pill" href="/categories/smartphones/">Meilleurs iPhone</a>
+        <a class="pill" href="/categories/sport/">Chaussures running</a>
+        <a class="pill" href="/categories/cadeaux/">Idées cadeaux</a>
+        <a class="pill" href="/categories/maison/">Casques / Audio & Maison</a>
+      </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="hero">
-      <h1 style="margin:.25rem 0;text-align:center">Trouvez le meilleur — simplement</h1>
-      <p style="margin:0; opacity:.8;text-align:center">Guides d’achat indépendants et comparatifs multi‑thématiques, mis à jour régulièrement.</p>
+      <h1>Trouvez le meilleur — simplement</h1>
+      <p>Guides d’achat indépendants et comparatifs multi-thématiques, mis à jour régulièrement.</p>
+
       <div class="searchbar">
         <label class="sr-only" for="q">Recherche</label>
         <input id="q" type="search" placeholder="Rechercher un comparatif (ex: aspirateur, iPhone, cadeaux)…" />
       </div>
+
       <div id="filters" class="filters" aria-label="Accès rapides catégories">
-  <a class="pill" href="/categories/smartphones/">Tech</a>
-  <a class="pill" href="/categories/sport/">Sport</a>
-  <a class="pill" href="/categories/maison/">Maison</a>
-  <a class="pill" href="/categories/cuisine/">Cuisine</a>
-  <a class="pill" href="/categories/cadeaux/">Cadeaux</a>
-</div>
+        <a class="pill" href="/categories/smartphones/">Tech</a>
+        <a class="pill" href="/categories/sport/">Sport</a>
+        <a class="pill" href="/categories/maison/">Maison</a>
+        <a class="pill" href="/categories/cuisine/">Cuisine</a>
+        <a class="pill" href="/categories/cadeaux/">Cadeaux</a>
+      </div>
     </section>
 
-    <!-- Catégories visibles -->
-<section aria-labelledby="catsTitle">
-  <h2 id="catsTitle" style="margin-bottom:.5rem">Catégories</h2>
-  <div class="grid">
-    <!-- Smartphones -->
-    <article class="card">
-      <img src="assets/img/smartphones.jpg" alt="Comparatifs Smartphones" style="width:100%;height:auto;border-radius:.5rem">
-      <div class="card-body">
-        <h3>Smartphones</h3>
-        <p>Guides & comparatifs iPhone/Android 2025.</p>
-        <a class="pill" href="/categories/smartphones/">Voir</a>
+    <!-- Catégories (3 colonnes fixes sur desktop) -->
+    <section aria-labelledby="catsTitle">
+      <h2 id="catsTitle">Catégories</h2>
+      <div class="grid grid-3">
+        <!-- 1 -->
+        <article class="card">
+          <img src="assets/img/smartphones.jpg" alt="Comparatifs Smartphones">
+          <div class="card-body">
+            <h3>Smartphones</h3>
+            <p>Guides & comparatifs iPhone/Android 2025.</p>
+            <a class="pill" href="/categories/smartphones/">Voir</a>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="card">
+          <img src="assets/img/luminaires-deco.jpg" alt="Maison & Déco">
+          <div class="card-body">
+            <h3>Maison & Déco</h3>
+            <p>Luminaires, rangement, objets utiles.</p>
+            <a class="pill" href="/categories/luminaires-deco.html">Voir</a>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="card">
+          <img src="assets/img/cadeaux.jpg" alt="Idées cadeaux">
+          <div class="card-body">
+            <h3>Idées cadeaux</h3>
+            <p>Des idées utiles pour toutes les occasions.</p>
+            <a class="pill" href="/categories/cadeaux/">Voir</a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="card">
+          <img src="assets/img/robots-cuisine.jpg" alt="Robots de cuisine">
+          <div class="card-body">
+            <h3>Robots cuisine</h3>
+            <p>Robots multifonctions, blenders, etc.</p>
+            <a class="pill" href="/categories/robots-cuisine.html">Voir</a>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="card">
+          <img src="assets/img/chaussures-running.jpg" alt="Sport & Fitness">
+          <div class="card-body">
+            <h3>Sport & Fitness</h3>
+            <p>Chaussures, montres, objets connectés.</p>
+            <a class="pill" href="/categories/chaussures-running.html">Voir</a>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="card">
+          <img src="assets/img/casques-audio.jpg" alt="Casques Bluetooth">
+          <div class="card-body">
+            <h3>Casques Bluetooth</h3>
+            <p>ANC, autonomie, confort : nos sélections.</p>
+            <a class="pill" href="/categories/casques-audio.html">Voir</a>
+          </div>
+        </article>
       </div>
-    </article>
+    </section>
 
-    
-    <!-- Déco / Maison -->
-    <article class="card">
-      <img src="assets/img/luminaires-deco.jpg" alt="Maison & Déco" style="width:100%;height:auto;border-radius:.5rem">
-      <div class="card-body">
-        <h3>Maison & Déco</h3>
-        <p>Luminaires, rangement, objets utiles.</p>
-        <a class="pill" href="/categories/luminaires-deco.html">Voir</a>
+    <!-- Derniers comparatifs : occupe la largeur dispo même avec 1–2 cartes -->
+    <section aria-labelledby="lastTitle" class="section-last">
+      <h2 id="lastTitle">Derniers comparatifs</h2>
+      <div class="grid grid-auto">
+        <article class="card">
+          <img src="assets/img/cadeaux.jpg" alt="Idées cadeaux">
+          <div class="card-body">
+            <h3>Top 10 cadeaux fête des grands-parents 2025</h3>
+            <p>Cadres connectés, plaids chauffants, liseuses… 10 idées concrètes et utiles.</p>
+            <a class="pill" href="/categories/cadeaux/meilleurs-cadeaux-grands-parents-2025.html">Lire</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/img/smartphones.jpg" alt="Meilleur iPhone rentrée 2025">
+          <div class="card-body">
+            <h3>Quel iPhone acheter — rentrée 2025</h3>
+            <p>iPhone 16 Pro/16/15 Plus/14 : lequel choisir selon vos besoins.</p>
+            <a class="pill" href="/categories/smartphones/iphone-rentree-2025.html">Lire</a>
+          </div>
+        </article>
       </div>
-    </article>
-
-    <!-- Idées cadeaux -->
-    <article class="card">
-      <img src="assets/img/cadeaux.jpg" alt="Idées cadeaux" style="width:100%;height:auto;border-radius:.5rem">
-      <div class="card-body">
-        <h3>Idées cadeaux</h3>
-        <p>Des idées utiles pour toutes les occasions.</p>
-        <a class="pill" href="/categories/cadeaux/">Voir</a>
-      </div>
-    </article>
-
-
-    <!-- Robots cuisine -->
-    <article class="card">
-      <img src="assets/img/robots-cuisine.jpg" alt="Robots de cuisine" style="width:100%;height:auto;border-radius:.5rem">
-      <div class="card-body">
-        <h3>Robots cuisine</h3>
-        <p>Robots multifonctions, blenders, etc.</p>
-        <a class="pill" href="/categories/robots-cuisine.html">Voir</a>
-      </div>
-    </article>
-
-
-
-    <!-- Sport -->
-    <article class="card">
-      <img src="assets/img/chaussures-running.jpg" alt="Sport & Fitness" style="width:100%;height:auto;border-radius:.5rem">
-      <div class="card-body">
-        <h3>Sport & Fitness</h3>
-        <p>Chaussures, montres, objets connectés.</p>
-        <a class="pill" href="/categories/chaussures-running.html">Voir</a>
-
-        <!-- Casques audio -->
-    <article class="card">
-      <img src="assets/img/casques-audio.jpg" alt="Casques Bluetooth" style="width:100%;height:auto;border-radius:.5rem">
-      <div class="card-body">
-        <h3>Casques Bluetooth</h3>
-        <p>ANC, autonomie, confort : nos sélections.</p>
-        <a class="pill" href="/categories/casques-audio.html">Voir</a>
-
-      </div>
-    </article>
-      </div>
-    </article>
-  </div>
-</section>
-    
-<!-- Derniers comparatifs (avec cartes alignées) -->
-<section aria-labelledby="lastTitle" style="margin-top:1.5rem">
-  <h2 id="lastTitle" style="margin-bottom:.5rem">Derniers comparatifs</h2>
-  <div class="grid">
-    <!-- Cadeaux grands-parents 2025 -->
-    <article class="card">
-      <img src="assets/img/cadeaux.jpg" alt="Idées cadeaux" style="width:100%; height:auto; border-radius:.5rem">
-      <div class="card-body">
-        <h3>Top 10 cadeaux fête des grands-parents 2025</h3>
-        <p>Cadres connectés, plaids chauffants, liseuses… 10 idées concrètes et utiles.</p>
-        <a class="pill" href="/categories/cadeaux/meilleurs-cadeaux-grands-parents-2025.html">Lire</a>
-      </div>
-    </article>
-
-    <!-- iPhone rentrée 2025 (si présent) -->
-    <article class="card">
-      <img src="assets/img/smartphones.jpg" alt="Meilleur iPhone rentrée 2025" style="width:100%;height:auto;border-radius:.5rem">
-      <div class="card-body">
-        <h3>Quel iPhone acheter — rentrée 2025</h3>
-        <p>iPhone 16 Pro/16/15 Plus/14 : lequel choisir selon vos besoins.</p>
-        <a class="pill" href="/categories/smartphones/iphone-rentree-2025.html">Lire</a>
-      </div>
-    </article>
-  </div>
-</section>
-
+    </section>
   </main>
 
   <footer class="site">
-    <div class="container" style="display:flex; gap:1rem; justify-content:space-between; flex-wrap:wrap">
+    <div class="container footerbar">
       <small>© 2025 LesMeilleursComparatifs</small>
-      <small>Certains liens pourront être affiliés. <a href="./pages/mentions-legales.html">Mentions légales</a> · <a href="./pages/confidentialite.html">Confidentialité</a> · <a href="./pages/a-propos.html">À propos</a> · <a href="./pages/contact.html">Contact</a></small>
+      <small>Certains liens pourront être affiliés. <a href="/pages/mentions-legales.html">Mentions légales</a> · <a href="/pages/confidentialite.html">Confidentialité</a> · <a href="/pages/a-propos.html">À propos</a> · <a href="/pages/contact.html">Contact</a></small>
     </div>
   </footer>
+
   <script src="./assets/script.js"></script>
   <script src="./assets/consent.js"></script>
 </body>
