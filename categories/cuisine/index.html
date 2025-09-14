@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuisine — Les Meilleurs Comparatifs</title>
+  <meta name="description" content="Découvrez nos comparatifs cuisine : cafetières automatiques, robots cuiseurs, blenders, friteuses et plus. Guides clairs, budgets raisonnables, sélections disponibles sur Amazon.">
+  <link rel="canonical" href="https://les-meilleurs-comparatif.netlify.app/categories/cuisine/index.html">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
+
+  <link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="container topbar">
+    <div></div>
+    <div class="brand">
+      <a href="../../index.html" aria-label="Accueil">
+        <img src="../../assets/logos/logo-current-light.svg" alt="LesMeilleursComparatifs" height="24">
+      </a>
+    </div>
+    <div class="actions">
+      <button class="mode-toggle" id="modeToggle" aria-label="Activer / désactiver le mode sombre">🌗</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <nav style="margin:.75rem 0; font-size:.95rem">
+    <a href="../../index.html">Accueil</a> › <span>Cuisine</span>
+  </nav>
+
+  <section class="hero">
+    <h1>🍳 Comparatifs Cuisine</h1>
+    <p>Retrouvez nos <strong>guides d’achat</strong> et <strong>comparatifs</strong> d’appareils de cuisine : <em>cafetières automatiques, robots cuiseurs, blenders</em>… Des sélections <strong>claires</strong>, <strong>budget maîtrisé</strong>, et disponibles sur Amazon.</p>
+  </section>
+
+  <!-- Liste des articles Cuisine -->
+  <div class="grid" style="margin-top:1.5rem">
+
+    <!-- Article 1 : Cafetières < 300 € -->
+    <article class="card">
+      <img src="../../assets/img/cafetiere-automatique.jpg" alt="Meilleures cafetières automatiques à moins de 300 € (2025)" style="width:100%; height:auto; border-radius:.5rem">
+      <div class="card-body">
+        <h2>Meilleures cafetières automatiques à moins de 300 € (2025)</h2>
+        <p>Delonghi Magnifica S, Philips 2200, Krups Essential, Melitta Solo, Siemens EQ.3 s100 : notre comparatif <strong>journalistique</strong> et <strong>pratique</strong> pour un espresso réussi sans se ruiner.</p>
+        <a class="pill" href="./meilleures-cafetieres-automatiques-moins-300-2025.html">Voir l’article</a>
+      </div>
+    </article>
+
+    <!-- Article 2 : à venir -->
+    <article class="card">
+      <img src="../../assets/img/placeholder.jpg" alt="Comparatif cuisine à venir" style="width:100%; height:auto; border-radius:.5rem">
+      <div class="card-body">
+        <h2>Prochain comparatif cuisine</h2>
+        <p>Bientôt disponible : robots cuiseurs, blenders, friteuses sans huile et autres appareils malins.</p>
+        <a class="pill" href="#">À venir</a>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<!-- Bouton retour haut de page -->
+<button id="backToTop" aria-label="Retour en haut">↑</button>
+
+<script>
+  // Mode sombre (persistant)
+  const btn = document.getElementById('modeToggle');
+  if (btn) {
+    btn.addEventListener('click', ()=> {
+      const cur = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = cur === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('lmc-theme', next);
+    });
+  }
+  (function(){
+    const s = localStorage.getItem('lmc-theme');
+    if(s) document.documentElement.setAttribute('data-theme', s);
+  })();
+</script>
+<script src="../../assets/consent.js"></script>
+<script src="../../assets/script.js"></script>
+</body>
+</html>
